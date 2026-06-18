@@ -3,12 +3,12 @@
 # SD card path: /firmware/release/ on Box A Teensy (legacy /firmware/manifest.txt also supported)
 
 channel=release
-version=0.10.1
-esp32=lounge_ui_v0.10.1.bin
-teensy_a=lounge_player_v0.10.1.bin
-teensy_b=lounge_zones_v0.10.1.bin
+version=0.10.2
+esp32=lounge_ui_v0.10.2.bin
+teensy_a=lounge_player_v0.10.2.bin
+teensy_b=lounge_zones_v0.10.2.bin
 
-esp32_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_ui_v0.10.1.bin
-teensy_a_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_player_v0.10.1.bin
-teensy_b_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_zones_v0.10.1.bin
+esp32_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_ui_v0.10.2.bin
+teensy_a_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_player_v0.10.2.bin
+teensy_b_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_zones_v0.10.2.bin
 manifest_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/manifest.txt
