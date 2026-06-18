@@ -1,7 +1,3 @@
-# Sala Sound Lounge — PRODUCTION OTA manifest
-# Public GitHub: FlashAeronautica/Sound-Lounge-Firmware (release/)
-# SD card path: /firmware/release/ on Box A Teensy (legacy /firmware/manifest.txt also supported)
-
 channel=release
 version=0.10.3
 esp32=lounge_ui_v0.10.3.bin

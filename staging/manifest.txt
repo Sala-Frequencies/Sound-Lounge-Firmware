@@ -1,7 +1,3 @@
-# Sala Sound Lounge — STAGING / TEST OTA manifest
-# Public GitHub: FlashAeronautica/Sound-Lounge-Firmware (staging/)
-# SD card path: /firmware/staging/ on Box A Teensy
-
 channel=staging
 version=0.10.3
 esp32=lounge_ui_v0.10.3.bin
