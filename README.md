@@ -1,24 +1,44 @@
-# Firmware updates
+# Sound Lounge — public OTA firmware
 
-Public over-the-air update packages.
+Over-the-air update packages for the Sala Sound Lounge three-node system (ESP32 UI, Teensy Player, Teensy Zones).
+
+**Current published version:** **0.10.10** (release and staging channels).
+
+Source code and build scripts live in the private [Sound-Lounge-Music](https://github.com/FlashAeronautica/Sound-Lounge-Music) repository. This repo holds **binaries only** so devices can download updates without GitHub authentication.
 
 ## Folders
 
 | Folder | Use |
 |--------|-----|
-| `release/` | Production channel |
-| `staging/` | Pre-release channel |
+| `release/` | Production channel — field rollout |
+| `staging/` | Pre-release / test bench channel |
 
-Each folder contains a `manifest.txt` file and the binary files referenced in that manifest.
+Each folder contains a `manifest.txt` and the three binary files referenced in that manifest (`lounge_ui_v*.bin`, `lounge_player_v*.bin`, `lounge_zones_v*.bin`).
 
-The root `manifest.txt` file matches the release channel.
+The root `manifest.txt` matches the **release** channel.
 
-## Manifest URLs
+## Manifest URLs (raw, no auth)
 
-Release:
+| Channel | URL |
+|---------|-----|
+| Release | https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/manifest.txt |
+| Staging | https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/manifest.txt |
 
-https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/manifest.txt
+## SD card mirror (optional offline install)
 
-Staging:
+Copy the same files onto the **Box A Teensy** microSD:
 
-https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/manifest.txt
+```
+/firmware/release/manifest.txt   + lounge_*_v*.bin   (production)
+/firmware/staging/manifest.txt   + lounge_*_v*.bin   (testing)
+```
+
+Devices with firmware **0.10.10+** verify the full SD package before attempting a GitHub download. WiFi is never turned on automatically for update checks or installs.
+
+## Install order (automatic)
+
+1. Zones (Teensy B)
+2. Player (Teensy A)
+3. UI (ESP32)
+
+The ESP32 UI orchestrates this order when you tap **Install Updates** in Settings.
