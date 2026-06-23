@@ -1,10 +1,10 @@
 channel=release
-version=0.10.39
-esp32=lounge_ui_v0.10.39.bin
-teensy_a=lounge_player_v0.10.39.bin
-teensy_b=lounge_zones_v0.10.39.bin
+version=0.10.40
+esp32=lounge_ui_v0.10.40.bin
+teensy_a=lounge_player_v0.10.40.bin
+teensy_b=lounge_zones_v0.10.40.bin
 
-esp32_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_ui_v0.10.39.bin
-teensy_a_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_player_v0.10.39.bin
-teensy_b_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_zones_v0.10.39.bin
+esp32_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_ui_v0.10.40.bin
+teensy_a_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_player_v0.10.40.bin
+teensy_b_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/lounge_zones_v0.10.40.bin
 manifest_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/manifest.txt
