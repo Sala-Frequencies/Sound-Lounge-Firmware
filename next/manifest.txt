@@ -3,7 +3,7 @@
 version=0.12.5-next-wififix
 esp32=lounge_ui_next_v0.12.5-next-wififix.bin
 esp32_version=0.12.5-next-wififix
-esp32_size=1277232
+esp32_size=1277040
 teensy_a=lounge_player_next_v0.12.5-next-wififix.bin
 teensy_a_version=0.12.5-next-wififix
 teensy_a_size=134144
