@@ -1,6 +1,12 @@
 # Sala Sound Lounge Next firmware package (SD-card update)
 # Copy this folder to the Box A Teensy microSD as /firmware/
-version=0.12.6-next-routername
-esp32=lounge_ui_next_v0.12.6-next-routername.bin
-esp32_version=0.12.6-next-routername
-esp32_size=1309760
+version=0.12.7-next-alldummy
+esp32=lounge_ui_next_v0.12.7-next-alldummy.bin
+esp32_version=0.12.7-next-alldummy
+esp32_size=1309744
+teensy_a=lounge_player_next_v0.12.7-next-alldummy.bin
+teensy_a_version=0.12.7-next-alldummy
+teensy_a_size=134144
+teensy_b=lounge_zones_next_v0.12.7-next-alldummy.bin
+teensy_b_version=0.12.7-next-alldummy
+teensy_b_size=147456
