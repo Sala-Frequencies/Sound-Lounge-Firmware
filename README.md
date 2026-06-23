@@ -4,6 +4,8 @@ Over-the-air update packages for the Sala Sound Lounge three-node system (ESP32 
 
 **Current published version:** **0.10.13** (release and staging channels).
 
+**Current Next test version:** **0.12.4-next-publicghdummy**.
+
 Source code and build scripts live in the private [Sound-Lounge-Music](https://github.com/FlashAeronautica/Sound-Lounge-Music) repository. This repo holds **binaries only** so devices can download updates without GitHub authentication.
 
 ## Folders
@@ -12,8 +14,9 @@ Source code and build scripts live in the private [Sound-Lounge-Music](https://g
 |--------|-----|
 | `release/` | Production channel — field rollout |
 | `staging/` | Pre-release / test bench channel |
+| `next/` | Side-by-side Next firmware test channel |
 
-Each folder contains a `manifest.txt` and the three binary files referenced in that manifest (`lounge_ui_v*.bin`, `lounge_player_v*.bin`, `lounge_zones_v*.bin`).
+Each folder contains a `manifest.txt` and the three binary files referenced in that manifest.
 
 The root `manifest.txt` matches the **release** channel.
 
@@ -23,6 +26,7 @@ The root `manifest.txt` matches the **release** channel.
 |---------|-----|
 | Release | https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/release/manifest.txt |
 | Staging | https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/manifest.txt |
+| Next | https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/next/manifest.txt |
 
 ## SD card mirror (optional offline install)
 
@@ -31,6 +35,7 @@ Copy the same files onto the **Box A Teensy** microSD:
 ```
 /firmware/release/manifest.txt   + lounge_*_v*.bin   (production)
 /firmware/staging/manifest.txt   + lounge_*_v*.bin   (testing)
+/firmware/next/manifest.txt      + lounge_*_next_v*.bin   (Next testing)
 ```
 
 Devices with firmware **0.10.10+** verify the full SD package before attempting a GitHub download. WiFi is never turned on automatically for update checks or installs.
