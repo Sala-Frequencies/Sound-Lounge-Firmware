@@ -4,7 +4,7 @@ Over-the-air update packages for the Sala Sound Lounge three-node system (ESP32 
 
 **Current published version:** **0.10.13** (release and staging channels).
 
-**Current Next test version:** **0.12.4-next-publicghdummy**.
+**Current Next test version:** **0.12.5-next-wififix**.
 
 Source code and build scripts live in the private [Sound-Lounge-Music](https://github.com/FlashAeronautica/Sound-Lounge-Music) repository. This repo holds **binaries only** so devices can download updates without GitHub authentication.
 
