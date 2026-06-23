@@ -1,10 +1,10 @@
 channel=staging
-version=0.10.35
-esp32=lounge_ui_v0.10.35.bin
-teensy_a=lounge_player_v0.10.35.bin
-teensy_b=lounge_zones_v0.10.35.bin
+version=0.10.36
+esp32=lounge_ui_v0.10.36.bin
+teensy_a=lounge_player_v0.10.36.bin
+teensy_b=lounge_zones_v0.10.36.bin
 
-esp32_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/lounge_ui_v0.10.35.bin
-teensy_a_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/lounge_player_v0.10.35.bin
-teensy_b_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/lounge_zones_v0.10.35.bin
+esp32_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/lounge_ui_v0.10.36.bin
+teensy_a_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/lounge_player_v0.10.36.bin
+teensy_b_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/lounge_zones_v0.10.36.bin
 manifest_url=https://raw.githubusercontent.com/FlashAeronautica/Sound-Lounge-Firmware/main/staging/manifest.txt
