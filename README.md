@@ -10,13 +10,15 @@ Source code and build scripts live in the private [Sound-Lounge-Music](https://g
 
 | Folder | Use |
 |--------|-----|
-| `next/` | Current Sala Frequencies test channel |
+| `next/` | Sala Frequencies **Next** test channel (`Sound_Lounge_*_Next` sketches) |
 | `release/` | Production channel — field rollout |
 | `staging/` | Pre-release / test bench channel |
 
 Each folder contains a `manifest.txt` and the binary files referenced in that manifest (`lounge_ui*_v*.bin`, `lounge_player*_v*.bin`, `lounge_zones*_v*.bin`).
 
 The root `manifest.txt` matches the **release** channel.
+
+A manifest may list **only the nodes being updated** (e.g. Screen + Player without Lounge). Omitted keys are skipped on the device.
 
 ## Manifest URLs (raw, no auth)
 
@@ -29,7 +31,7 @@ The root `manifest.txt` matches the **release** channel.
 
 ## SD card mirror (optional offline install)
 
-Copy the same files onto the **Box A Teensy** microSD:
+Copy the same files onto the **Box A Teensy 4.1** microSD:
 
 ```
 /firmware/release/manifest.txt   + lounge_*_v*.bin   (production)
@@ -37,12 +39,35 @@ Copy the same files onto the **Box A Teensy** microSD:
 /firmware/next/manifest.txt      + lounge_*_next_v*.bin   (Next testing)
 ```
 
-Devices with firmware **0.10.10+** verify the full SD package before attempting a GitHub download. WiFi is never turned on automatically for update checks or installs.
+Next firmware verifies the SD package before attempting a GitHub download. WiFi is never turned on automatically for update checks or installs.
 
 ## Install order (automatic)
 
-1. Zones (Teensy B)
-2. Player (Teensy A)
-3. UI (ESP32)
+1. Lounge / Zones (Teensy 4.0), if listed in manifest
+2. Player (Teensy 4.1), if listed
+3. Screen / UI (ESP32), if listed — reboots last
 
-The ESP32 UI orchestrates this order when you tap **Install Updates** in Settings.
+The ESP32 UI orchestrates this order when you tap **Install Updates** in Settings. Lounge updates require version verification after reboot.
+
+## Publishing a Next test package
+
+From the `Sound-Lounge-Music` repo on the PC:
+
+1. Bump `FIRMWARE_VERSION` in the relevant `*_Next/Config.h` files.
+2. `.\build_firmware_next.ps1`
+3. Copy the needed `.bin` files from `firmware_next/` into this repo's `next/` folder.
+4. Edit `next/manifest.txt` — include `esp32`, `teensy_a`, and/or `teensy_b` lines with correct `_size=` values from the built manifest.
+5. Update the **Current Next test version** line in this README.
+6. Commit and push to `main`.
+
+Full detail: [Sound-Lounge-Music/docs/NEXT_FIRMWARE.md](https://github.com/FlashAeronautica/Sound-Lounge-Music/blob/main/docs/NEXT_FIRMWARE.md) (private repo).
+
+## Board mapping
+
+| Manifest key | Node | MCU |
+|--------------|------|-----|
+| `esp32` | Screen (UI) | ESP32-S3 |
+| `teensy_a` | Player | **Teensy 4.1** |
+| `teensy_b` | Lounge (Zones) | **Teensy 4.0** |
+
+Player firmware rejects images with the wrong Teensy flash ID (`fw_teensy41` vs `fw_teensy40`).
