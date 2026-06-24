@@ -1,7 +1,7 @@
 # Sala Frequencies firmware package
-version=0.13.1
-summary=Refined main page layout, Updates screen with SD and GitHub versions, Display Settings and Information labels
-music_player_ui=music_player_ui_0.13.1.bin
-music_player_ui_version=0.13.1
+version=0.13.2
+summary=Dummy OTA test for display update flow
+music_player_ui=music_player_ui_0.13.2.bin
+music_player_ui_version=0.13.2
 music_player_ui_hw=1
 music_player_ui_size=1330720
