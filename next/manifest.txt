@@ -1,6 +1,15 @@
-# Sala Sound Lounge Next firmware package (Screen recovery first)
+# Sala Sound Lounge Next firmware package (SD-card update)
+# Copy this folder to the Box A Teensy microSD as /firmware/
 version=0.12.14-next-playerfix
 esp32=lounge_ui_next_v0.12.14-next-playerfix.bin
 esp32_version=0.12.14-next-playerfix
 esp32_hw=1
 esp32_size=1326352
+teensy_a=lounge_player_next_v0.12.14-next-playerfix.bin
+teensy_a_version=0.12.14-next-playerfix
+teensy_a_hw=1
+teensy_a_size=141312
+teensy_b=lounge_zones_next_v0.12.14-next-playerfix.bin
+teensy_b_version=0.12.14-next-playerfix
+teensy_b_hw=1
+teensy_b_size=147456
