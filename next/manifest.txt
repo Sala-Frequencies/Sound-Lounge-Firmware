@@ -1,11 +1,7 @@
-# Sala Sound Lounge Next firmware package (recovery update)
-# This recovery package updates Player and Screen first; Lounge follows in the next package.
-version=0.12.10-next-recovery
-esp32=lounge_ui_next_v0.12.10-next-recovery.bin
-esp32_version=0.12.10-next-recovery
+# Sala Sound Lounge Next firmware package (UI SD updater fix)
+# This package updates only the Screen updater before retrying Player/Lounge.
+version=0.12.11-next-sdfix
+esp32=lounge_ui_next_v0.12.11-next-sdfix.bin
+esp32_version=0.12.11-next-sdfix
 esp32_hw=1
-esp32_size=1314864
-teensy_a=lounge_player_next_v0.12.10-next-recovery.bin
-teensy_a_version=0.12.10-next-recovery
-teensy_a_hw=1
-teensy_a_size=141312
+esp32_size=1315008
