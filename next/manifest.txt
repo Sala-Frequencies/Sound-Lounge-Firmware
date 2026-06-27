@@ -1,16 +1,16 @@
 # Sala Frequencies firmware package
 # Copy this folder to the Box A Teensy microSD as /firmware/
-version=0.14.2
-summary=Fix post-OTA player and lounge discovery on UI boot
-music_player_ui=music_player_ui_0.14.2.bin
-music_player_ui_version=0.14.2
+version=0.14.3
+summary=Dummy OTA test from 0.14.2 baseline
+music_player_ui=music_player_ui_0.14.3.bin
+music_player_ui_version=0.14.3
 music_player_ui_hw=1
 music_player_ui_size=1332144
-music_player_sound=music_player_sound_0.14.2.bin
-music_player_sound_version=0.14.2
+music_player_sound=music_player_sound_0.14.3.bin
+music_player_sound_version=0.14.3
 music_player_sound_hw=1
 music_player_sound_size=143360
-sound_lounge=sound_lounge_0.14.2.bin
-sound_lounge_version=0.14.2
+sound_lounge=sound_lounge_0.14.3.bin
+sound_lounge_version=0.14.3
 sound_lounge_hw=1
 sound_lounge_size=147456
