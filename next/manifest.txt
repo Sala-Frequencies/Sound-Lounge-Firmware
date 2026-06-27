@@ -1,16 +1,16 @@
 # Sala Frequencies firmware package
 # Copy this folder to the Box A Teensy microSD as /firmware/
-version=0.13.4
-summary=Dummy OTA test after lounge restart recovery
-music_player_ui=music_player_ui_0.13.4.bin
-music_player_ui_version=0.13.4
+version=0.13.5
+summary=Fix lounge OTA verify timeout and Sound Lounge device info reporting
+music_player_ui=music_player_ui_0.13.5.bin
+music_player_ui_version=0.13.5
 music_player_ui_hw=1
-music_player_ui_size=1330896
-music_player_sound=music_player_sound_0.13.4.bin
-music_player_sound_version=0.13.4
+music_player_ui_size=1331088
+music_player_sound=music_player_sound_0.13.5.bin
+music_player_sound_version=0.13.5
 music_player_sound_hw=1
-music_player_sound_size=142336
-sound_lounge=sound_lounge_0.13.4.bin
-sound_lounge_version=0.13.4
+music_player_sound_size=143360
+sound_lounge=sound_lounge_0.13.5.bin
+sound_lounge_version=0.13.5
 sound_lounge_hw=1
 sound_lounge_size=147456
