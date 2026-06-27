@@ -2,7 +2,7 @@
 
 Over-the-air update packages for the Sala Sound Lounge three-node system (ESP32 UI, Teensy Player, Teensy Zones).
 
-**Current Next test version:** **0.13.6** (dummy OTA test from 0.13.5 baseline).
+**Current Next test version:** **0.13.7** (Stage 1 — Music Player Sound OTA fix only; Stage 2 UI package pending).
 
 Source code and build scripts live in the private [Sound-Lounge-Music](https://github.com/FlashAeronautica/Sound-Lounge-Music) repository. This repo holds **binaries only** so devices can download updates without GitHub authentication.
 
