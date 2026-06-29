@@ -2,7 +2,7 @@
 
 This repository hosts official firmware updates for the **Sala Frequencies** music player. You do not need a GitHub account to download files or to update a player that is already set up for online updates.
 
-**Current firmware version:** **0.15.08**
+**Current firmware version:** **0.15.09**
 
 ---
 
