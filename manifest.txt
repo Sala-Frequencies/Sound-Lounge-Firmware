@@ -1,16 +1,16 @@
 # Sala Frequencies firmware package
 # Copy this folder to the Box A Teensy microSD as /firmware/
-version=0.15.06
-summary=Restore 0.14.4 restart flow; remove splash teensy sync freeze
-music_player_ui=music_player_ui_0.15.06.bin
-music_player_ui_version=0.15.06
+version=0.15.07
+summary=Dummy OTA test package (restart flow verification)
+music_player_ui=music_player_ui_0.15.07.bin
+music_player_ui_version=0.15.07
 music_player_ui_hw=1
 music_player_ui_size=1337056
-music_player_sound=music_player_sound_0.15.06.bin
-music_player_sound_version=0.15.06
+music_player_sound=music_player_sound_0.15.07.bin
+music_player_sound_version=0.15.07
 music_player_sound_hw=1
 music_player_sound_size=146432
-sound_lounge=sound_lounge_0.15.06.bin
-sound_lounge_version=0.15.06
+sound_lounge=sound_lounge_0.15.07.bin
+sound_lounge_version=0.15.07
 sound_lounge_hw=1
 sound_lounge_size=147456
