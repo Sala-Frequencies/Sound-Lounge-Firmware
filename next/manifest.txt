@@ -1,16 +1,16 @@
 # Sala Frequencies firmware package
 # Copy this folder to the Box A Teensy microSD as /firmware/
-version=0.14.26
-summary=Next OTA 0.14.26: per-component update detection and selective install
-music_player_ui=music_player_ui_0.14.26.bin
-music_player_ui_version=0.14.26
+version=0.14.27
+summary=Next OTA 0.14.27: fix upgrade buttons when online/local differ
+music_player_ui=music_player_ui_0.14.27.bin
+music_player_ui_version=0.14.27
 music_player_ui_hw=1
-music_player_ui_size=1336720
-music_player_sound=music_player_sound_0.14.26.bin
-music_player_sound_version=0.14.26
+music_player_ui_size=1337104
+music_player_sound=music_player_sound_0.14.27.bin
+music_player_sound_version=0.14.27
 music_player_sound_hw=1
 music_player_sound_size=146432
-sound_lounge=sound_lounge_0.14.26.bin
-sound_lounge_version=0.14.26
+sound_lounge=sound_lounge_0.14.27.bin
+sound_lounge_version=0.14.27
 sound_lounge_hw=1
 sound_lounge_size=147456
