@@ -2,7 +2,7 @@
 
 Over-the-air update packages for the Sala Sound Lounge three-node system (ESP32 UI, Teensy Player, Teensy Zones).
 
-**Current Next test version:** **0.14.12** (UI update flow: Online/Local versions, one-step upgrade with progress and ETA).
+**Current Next test version:** **0.14.20** (progress bars during update, music pause on Updates screen, back navigation fix).
 
 Source code and build scripts live in the private [Sound-Lounge-Music](https://github.com/FlashAeronautica/Sound-Lounge-Music) repository. This repo holds **binaries only** so devices can download updates without GitHub authentication.
 
@@ -39,15 +39,17 @@ Copy the same files onto the **Box A Teensy 4.1** microSD:
 /firmware/next/manifest.txt      + music_player_*.bin   (Next testing)
 ```
 
-Next firmware verifies the SD package before attempting a GitHub download. WiFi is never turned on automatically for update checks or installs.
+Next firmware verifies the SD package before attempting an Online download. WiFi is never turned on automatically for update checks or installs.
+
+On the device, the UI labels the GitHub channel **Online** and the SD card package **Local**. **Upgrade Online** downloads to SD then installs in one step; **Upgrade Local** installs from SD only. See [NEXT_OPERATOR_UPDATE_GUIDE.md](https://github.com/FlashAeronautica/Sound-Lounge-Music/blob/main/docs/NEXT_OPERATOR_UPDATE_GUIDE.md) in the private Music repo.
 
 ## Install order (automatic)
 
-1. Sound Lounge (Teensy 4.0), if listed in manifest
-2. Music Player Sound (Teensy 4.1), if listed
-3. Music Player UI (ESP32), if listed — reboots last
+1. Sound Lounge (Teensy 4.0), if selected / listed in manifest
+2. Music Player Sound (Teensy 4.1), if selected / listed
+3. Music Player UI (ESP32), if selected / listed — reboots last
 
-The Music Player UI orchestrates this order when you tap **Install Updates** in Settings. Sound Lounge updates require version verification after reboot.
+The Music Player UI orchestrates this order when you tap **Upgrade Online** or **Upgrade Local** on the **Updates** screen. Sound Lounge updates require version verification after reboot.
 
 ## Publishing a Next test package
 
