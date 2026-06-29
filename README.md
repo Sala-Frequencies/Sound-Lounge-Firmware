@@ -62,11 +62,16 @@ Keep all downloaded files together in one folder on your computer.
 
 ### 2. Copy the package to the player SD card
 
-1. Safely remove the **microSD card** from the music player.
-2. Insert the card into your computer (USB adapter or card reader).
-3. Open the card and find or create a folder named **`firmware`** at the root of the card.
-4. Copy `manifest.txt` and all `.bin` files into that **`firmware`** folder.
-5. Safely eject the card and put it back in the player.
+**Always remove or insert the microSD card while the music player is switched off** (unplug power if the unit has no separate off switch).
+
+1. Switch the music player **completely off**.
+2. Remove the **microSD card** from the music player.
+3. Insert the card into your computer (USB adapter or card reader).
+4. Open the card and find or create a folder named **`firmware`** at the root of the card.
+5. Copy `manifest.txt` and all `.bin` files into that **`firmware`** folder.
+6. Safely eject the card from your computer.
+7. Insert the card back into the music player.
+8. Switch the music player **on**.
 
 ### 3. Install from the SD card
 
@@ -81,6 +86,7 @@ Keep all downloaded files together in one folder on your computer.
 
 - Keep the player **plugged into power** for the whole update.
 - Do **not** remove the SD card or switch off power while the **Updating** screen is shown.
+- When copying firmware files onto the card on a computer, **always remove and reinsert the microSD card only while the music player is powered off**.
 - If you use the SD card method, copy the **complete** package (`manifest.txt` plus all `.bin` files). A partial copy can fail or leave the player in a bad state.
 
 ---
