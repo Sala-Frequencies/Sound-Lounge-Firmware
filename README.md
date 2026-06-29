@@ -2,9 +2,11 @@
 
 Over-the-air update packages for the Sala Sound Lounge three-node system (ESP32 UI, Teensy Player, Teensy Zones).
 
-**Current Next test version:** **0.15.02** (track up/down buttons, simplified Information labels).
+**Current Next test version:** **0.15.03** (unified package — all three nodes same version).
 
 Source code and build scripts live in the private [Sound-Lounge-Music](https://github.com/FlashAeronautica/Sound-Lounge-Music) repository. This repo holds **binaries only** so devices can download updates without GitHub authentication.
+
+Every published Next package includes **all three firmware binaries at the same version**. The Music Player UI still installs only components that are older than the package; it does not apply unchanged nodes.
 
 ## Folders
 
@@ -18,7 +20,7 @@ Each folder contains a `manifest.txt` and the binary files referenced in that ma
 
 The root `manifest.txt` matches the **release** channel.
 
-A manifest may list **only the nodes being updated** (e.g. Music Player UI + Music Player Sound without Sound Lounge). Omitted keys are skipped on the device.
+A manifest may omit keys for legacy SD packages. **New Next OTA releases must list all three nodes** (`music_player_ui`, `music_player_sound`, `sound_lounge`) at the **same version** as the top-level `version=` field.
 
 ## Manifest URLs (raw, no auth)
 
@@ -55,10 +57,10 @@ The Music Player UI orchestrates this order when you tap **Upgrade Online** or *
 
 From the `Sound-Lounge-Music` repo on the PC:
 
-1. Bump `FIRMWARE_VERSION` in the relevant `*_Next/Config.h` files.
-2. `.\build_firmware_next.ps1`
-3. Copy the needed `.bin` files from `firmware_next/` into this repo's `next/` folder.
-4. Edit `next/manifest.txt` — include `music_player_ui`, `music_player_sound`, and/or `sound_lounge` lines with correct `_size=` values from the built manifest. Put the human-readable change note in `summary=`, not in the version string.
+1. Bump **`FIRMWARE_VERSION` to the same value** in all three `*_Next/Config.h` files (`Sound_Lounge_UI_Next`, `Sound_Lounge_Player_Next`, `Sound_Lounge_Zones_Next`).
+2. `.\build_firmware_next.ps1` (optional `-Summary "Next OTA x.y.zz: change note"`)
+3. Copy **all** `.bin` files from `firmware_next/` into this repo's `next/` folder.
+4. Copy `firmware_next/manifest.txt` to `next/manifest.txt` (verify all three `*_version=` lines match `version=`).
 5. Update the **Current Next test version** line in this README.
 6. Commit and push to `main`.
 
