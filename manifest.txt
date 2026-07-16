@@ -1,16 +1,16 @@
 # Sala Frequencies firmware package
 # Copy this folder to the microSD card as /firmware/
-version=0.15.55
+version=0.15.56
 summary=Update available
-music_player_ui=music_player_ui_0.15.55.bin
-music_player_ui_version=0.15.55
+music_player_ui=music_player_ui_0.15.56.bin
+music_player_ui_version=0.15.56
 music_player_ui_hw=1
-music_player_ui_size=1349168
-music_player_sound=music_player_sound_0.15.55.bin
-music_player_sound_version=0.15.55
+music_player_ui_size=1349184
+music_player_sound=music_player_sound_0.15.56.bin
+music_player_sound_version=0.15.56
 music_player_sound_hw=1
 music_player_sound_size=147456
-sound_lounge=sound_lounge_0.15.55.bin
-sound_lounge_version=0.15.55
+sound_lounge=sound_lounge_0.15.56.bin
+sound_lounge_version=0.15.56
 sound_lounge_hw=1
 sound_lounge_size=150528
