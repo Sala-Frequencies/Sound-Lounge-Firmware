@@ -1,8 +1,10 @@
-# Sala Frequencies — firmware updates
+# SALA Sound Lounge — firmware updates
 
-This repository hosts official firmware updates for the **Sala Frequencies** music player. You do not need a GitHub account to download files or to update a player that is already set up for online updates.
+Official firmware for the **[SALA Sound Lounge](https://www.salanewcastle.com.au/)** — vibro-acoustic sound therapy, handcrafted in Newcastle, NSW.
 
-**Current firmware version:** **0.15.16**
+You do not need a GitHub account to download files or to update a player that is already set up for online updates.
+
+**Current firmware version:** **0.15.70**
 
 ---
 
@@ -13,9 +15,9 @@ The **current** update package is always in the **root** of this repository on t
 | File | Purpose |
 |------|---------|
 | [`manifest.txt`](manifest.txt) | Package index — lists version and every `.bin` file |
-| `music_player_ui_<version>.bin` | Music player touchscreen (ESP32) |
-| `music_player_sound_<version>.bin` | Music player sound module (Teensy) |
-| `sound_lounge_<version>.bin` | Sound Lounge zones module (Teensy) |
+| `music_player_ui_0.15.70.bin` | Music player touchscreen (ESP32) |
+| `music_player_sound_0.15.70.bin` | Music player sound module (Teensy) |
+| `sound_lounge_0.15.70.bin` | Sound Lounge zones module (Teensy) |
 
 Browse or download everything from the [main branch folder](https://github.com/Sala-Frequencies/Sound-Lounge-Firmware/tree/main).
 
@@ -97,4 +99,10 @@ Keep all downloaded files together in one folder on your computer.
 - **Online update fails** — check Wi‑Fi signal and password, then try again or use the SD card method.
 - **Update stuck** — leave power connected for at least ten minutes. If nothing changes, power-cycle once and check **Settings** → **Information** for the installed version before trying again.
 
-For product support, contact your Sala / Sound Lounge installer or visit [salanewcastle.com.au](https://www.salanewcastle.com.au/).
+---
+
+## About SALA
+
+Full body sound immersion. Low-frequency vibrations create a gentle massage for your body and nervous system — so you can feel and hear the music.
+
+[salanewcastle.com.au](https://www.salanewcastle.com.au/) · [info@sala.au](mailto:info@sala.au) · Newcastle, NSW, Australia
