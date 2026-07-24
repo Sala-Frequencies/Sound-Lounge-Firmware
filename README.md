@@ -4,7 +4,7 @@ Official firmware for the **[SALA Sound Lounge](https://www.salanewcastle.com.au
 
 You do not need a GitHub account to download files or to update a player that is already set up for online updates.
 
-**Current firmware version:** **0.15.73**
+**Current firmware version:** **0.15.74**
 
 ---
 
@@ -15,9 +15,9 @@ The **current** update package is always in the **root** of this repository on t
 | File | Purpose |
 |------|---------|
 | [`manifest.txt`](manifest.txt) | Package index — lists version and every `.bin` file |
-| `music_player_ui_0.15.73.bin` | Music player touchscreen (ESP32) |
-| `music_player_sound_0.15.73.bin` | Music player sound module (Teensy) |
-| `sound_lounge_0.15.73.bin` | Sound Lounge zones module (Teensy) |
+| `music_player_ui_0.15.74.bin` | Music player touchscreen (ESP32) |
+| `music_player_sound_0.15.74.bin` | Music player sound module (Teensy) |
+| `sound_lounge_0.15.74.bin` | Sound Lounge zones module (Teensy) |
 
 Browse or download everything from the [main branch folder](https://github.com/Sala-Frequencies/Sound-Lounge-Firmware/tree/main).
 
