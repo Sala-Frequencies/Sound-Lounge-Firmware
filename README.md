@@ -8,6 +8,14 @@ You do not need a GitHub account to download files or to update a player that is
 
 ---
 
+## User guide (PDF)
+
+Full visual guide for the music player — home screen, Settings, Wi‑Fi, display, library, online updates, and SD card updates:
+
+**[Sala Frequencies Music Player User Guide (PDF)](docs/Sala_Frequencies_Music_Player_User_Guide.pdf)**
+
+---
+
 ## Where the firmware lives
 
 The **current** update package is always in the **root** of this repository on the `main` branch:
@@ -15,9 +23,9 @@ The **current** update package is always in the **root** of this repository on t
 | File | Purpose |
 |------|---------|
 | [`manifest.txt`](manifest.txt) | Package index — lists version and every `.bin` file |
-| `music_player_ui_1.0.0.bin` | Music player touchscreen (ESP32) |
-| `music_player_sound_1.0.0.bin` | Music player sound module (Teensy) |
-| `sound_lounge_1.0.0.bin` | Sound Lounge zones module (Teensy) |
+| `music_player_ui_1.0.0.bin` | Music player touchscreen |
+| `music_player_sound_1.0.0.bin` | Music player sound module |
+| `sound_lounge_1.0.0.bin` | Sound Lounge zones module |
 
 Browse or download everything from the [main branch folder](https://github.com/Sala-Frequencies/Sound-Lounge-Firmware/tree/main).
 
@@ -27,11 +35,9 @@ Browse or download everything from the [main branch folder](https://github.com/S
 
 Individual `.bin` files are downloaded from the same folder using the names listed in `manifest.txt`.
 
-**SD card updates** — copy `manifest.txt` and **all** listed `.bin` files into a folder named **`firmware`** on the player microSD card (see below).
+**SD card updates** — copy `manifest.txt` and **all** listed `.bin` files into a folder named **`firmware`** on the player microSD card (see the PDF guide, or the steps below).
 
 Only the latest package is kept here. Older versions are not stored in this repository.
-
-**Hardware matching** — updates apply only to hardware revisions listed in the manifest. Each component has its own field (`music_player_ui_hw`, `music_player_sound_hw`, `sound_lounge_hw`). Values can list multiple revisions (comma-separated, e.g. `1,2`). Check **Settings → Information** on your player for installed hardware revisions (Player HW / Lounge HW).
 
 ---
 
@@ -41,7 +47,7 @@ Use this when the player can connect to your Wi‑Fi network.
 
 1. On the player screen, open **Settings**.
 2. Turn **Wi‑Fi** on and connect to your network.
-3. Open **Updates** and wait until the version check finishes.
+3. Open **Check for Updates** and wait until the version check finishes.
 4. If an update is available, choose **Upgrade Online**.
 5. Leave the player **powered on** until the update completes and the screen restarts.
 
@@ -77,7 +83,7 @@ Keep all downloaded files together in one folder on your computer.
 
 ### 3. Install from the SD card
 
-1. On the player screen, open **Settings** → **Updates**.
+1. On the player screen, open **Settings → Check for Updates**.
 2. Wait until the version check finishes.
 3. Choose **Upgrade Local**.
 4. Leave the player **powered on** until the update completes and the screen restarts.
@@ -97,7 +103,9 @@ Keep all downloaded files together in one folder on your computer.
 
 - **No update offered** — the player may already be on the latest version, or the SD package may be missing or incomplete.
 - **Online update fails** — check Wi‑Fi signal and password, then try again or use the SD card method.
-- **Update stuck** — leave power connected for at least ten minutes. If nothing changes, power-cycle once and check **Settings** → **Information** for the installed version before trying again.
+- **Update stuck** — leave power connected for at least ten minutes. If nothing changes, power-cycle once and check **Settings → Information** for the installed version before trying again.
+
+For more detail (menus, library, display, and screenshots), see the [User Guide PDF](docs/Sala_Frequencies_Music_Player_User_Guide.pdf).
 
 ---
 
