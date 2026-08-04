@@ -25,13 +25,15 @@ ROOT = Path(__file__).resolve().parents[1]
 ASSETS = Path(__file__).resolve().parent / "assets"
 OUT = Path(__file__).resolve().parent / "Sala_Frequencies_Music_Player_User_Guide.pdf"
 
-TEAL = HexColor("#0D7377")
-TEAL_DARK = HexColor("#0A5558")
-NAVY = HexColor("#1A2332")
-SOFT = HexColor("#F4F7F8")
-MUTED = HexColor("#5A6570")
-WARN = HexColor("#B45309")
-LINE = HexColor("#D0D8DC")
+# Match Sound_Lounge_UI_Next light theme (factory default).
+ACCENT = HexColor("#A67355")
+ACCENT_DARK = HexColor("#8B5D43")
+TEXT = HexColor("#1A1A1A")
+SOFT = HexColor("#FAF6F2")
+MUTED = HexColor("#5C534A")
+WARN = HexColor("#B85C5C")
+LINE = HexColor("#E5E7EB")
+PANEL = HexColor("#FFFFFF")
 
 PAGE_W, PAGE_H = A4
 MARGIN = 18 * mm
@@ -45,7 +47,7 @@ def styles():
             parent=base["Title"],
             fontName="Helvetica-Bold",
             fontSize=28,
-            textColor=TEAL_DARK,
+            textColor=ACCENT_DARK,
             alignment=TA_CENTER,
             spaceAfter=6,
             leading=34,
@@ -55,7 +57,7 @@ def styles():
             parent=base["Title"],
             fontName="Helvetica-Bold",
             fontSize=22,
-            textColor=NAVY,
+            textColor=TEXT,
             alignment=TA_CENTER,
             spaceAfter=8,
             leading=28,
@@ -75,7 +77,7 @@ def styles():
             parent=base["Heading1"],
             fontName="Helvetica-Bold",
             fontSize=18,
-            textColor=TEAL_DARK,
+            textColor=ACCENT_DARK,
             spaceBefore=0,
             spaceAfter=10,
             leading=22,
@@ -85,7 +87,7 @@ def styles():
             parent=base["Heading2"],
             fontName="Helvetica-Bold",
             fontSize=13,
-            textColor=NAVY,
+            textColor=TEXT,
             spaceBefore=12,
             spaceAfter=6,
             leading=16,
@@ -95,7 +97,7 @@ def styles():
             parent=base["Normal"],
             fontName="Helvetica",
             fontSize=10.5,
-            textColor=NAVY,
+            textColor=TEXT,
             leading=15,
             spaceAfter=6,
         ),
@@ -104,7 +106,7 @@ def styles():
             parent=base["Normal"],
             fontName="Helvetica",
             fontSize=10.5,
-            textColor=NAVY,
+            textColor=TEXT,
             leading=15,
             leftIndent=4,
             spaceAfter=3,
@@ -114,7 +116,7 @@ def styles():
             parent=base["Normal"],
             fontName="Helvetica",
             fontSize=10,
-            textColor=TEAL_DARK,
+            textColor=ACCENT_DARK,
             leading=14,
             spaceAfter=6,
         ),
@@ -142,7 +144,7 @@ def styles():
             parent=base["Normal"],
             fontName="Helvetica",
             fontSize=11,
-            textColor=NAVY,
+            textColor=TEXT,
             leading=18,
             leftIndent=8,
             spaceAfter=2,
@@ -160,7 +162,7 @@ def styles():
             parent=base["Normal"],
             fontName="Helvetica",
             fontSize=10,
-            textColor=NAVY,
+            textColor=TEXT,
             leading=14,
         ),
     }
@@ -172,7 +174,7 @@ def banner(text, S):
     t.setStyle(
         TableStyle(
             [
-                ("BACKGROUND", (0, 0), (-1, -1), TEAL),
+                ("BACKGROUND", (0, 0), (-1, -1), ACCENT),
                 ("TOPPADDING", (0, 0), (-1, -1), 8),
                 ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
                 ("LEFTPADDING", (0, 0), (-1, -1), 10),
@@ -186,14 +188,14 @@ def banner(text, S):
 
 def callout(text, S, kind="tip"):
     style = S["tip"] if kind == "tip" else S["warn"]
-    bg = HexColor("#E6F4F5") if kind == "tip" else HexColor("#FEF3C7")
+    bg = HexColor("#F3E8E0") if kind == "tip" else HexColor("#F8E8E8")
     data = [[Paragraph(text, style)]]
     t = Table(data, colWidths=[PAGE_W - 2 * MARGIN])
     t.setStyle(
         TableStyle(
             [
                 ("BACKGROUND", (0, 0), (-1, -1), bg),
-                ("BOX", (0, 0), (-1, -1), 0.5, TEAL if kind == "tip" else WARN),
+                ("BOX", (0, 0), (-1, -1), 0.5, ACCENT if kind == "tip" else WARN),
                 ("TOPPADDING", (0, 0), (-1, -1), 8),
                 ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
                 ("LEFTPADDING", (0, 0), (-1, -1), 10),
@@ -265,7 +267,7 @@ def menu_map_table(S):
     t.setStyle(
         TableStyle(
             [
-                ("BACKGROUND", (0, 0), (-1, 0), TEAL),
+                ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
                 ("TEXTCOLOR", (0, 0), (-1, 0), white),
                 ("BACKGROUND", (0, 1), (-1, 1), SOFT),
                 ("BACKGROUND", (0, 3), (-1, 3), SOFT),
@@ -288,7 +290,7 @@ def menu_map_table(S):
     t.setStyle(
         TableStyle(
             [
-                ("BACKGROUND", (0, 0), (-1, 0), TEAL),
+                ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
                 ("BACKGROUND", (0, 1), (-1, 1), SOFT),
                 ("BACKGROUND", (0, 3), (-1, 3), SOFT),
                 ("BACKGROUND", (0, 5), (-1, 5), SOFT),
@@ -308,7 +310,7 @@ def menu_map_table(S):
 
 def on_page(canvas, doc):
     canvas.saveState()
-    canvas.setFillColor(TEAL)
+    canvas.setFillColor(ACCENT)
     canvas.rect(0, PAGE_H - 6 * mm, PAGE_W, 6 * mm, fill=1, stroke=0)
     canvas.setFillColor(MUTED)
     canvas.setFont("Helvetica", 8)
@@ -319,7 +321,7 @@ def on_page(canvas, doc):
 
 def on_first(canvas, doc):
     canvas.saveState()
-    canvas.setFillColor(TEAL)
+    canvas.setFillColor(ACCENT)
     canvas.rect(0, 0, PAGE_W, 28 * mm, fill=1, stroke=0)
     canvas.rect(0, PAGE_H - 28 * mm, PAGE_W, 28 * mm, fill=1, stroke=0)
     canvas.restoreState()
@@ -348,10 +350,18 @@ def build():
     story.append(Spacer(1, 8 * mm))
     story.append(Paragraph("Play music · Manage your library · Stay up to date", S["cover_sub"]))
     story.append(Paragraph("Firmware version <b>1.0.0</b>", S["cover_sub"]))
-    story.append(Spacer(1, 14 * mm))
-    story.append(img("manual-now-playing.png", max_w=70 * mm, max_h=95 * mm))
-    story.append(Paragraph("Home screen — Now Playing", S["caption"]))
-    story.append(Spacer(1, 8 * mm))
+    story.append(Spacer(1, 10 * mm))
+    story.append(
+        two_col_images(
+            "manual-splash.png",
+            "manual-now-playing.png",
+            "Startup splash",
+            "Home — Now Playing",
+            S,
+            max_h=88 * mm,
+        )
+    )
+    story.append(Spacer(1, 6 * mm))
     story.append(Paragraph("salanewcastle.com.au · info@sala.au · Newcastle, NSW", S["cover_sub"]))
     story.append(PageBreak())
 
@@ -423,10 +433,14 @@ def build():
         Paragraph(
             "• Opening Settings or browsing menus does not change whether music is playing.<br/>"
             "• To switch songs: select the new track, then press Play.<br/>"
-            "• If the list shows “Loading music…”, wait a moment for tracks to appear from the player’s storage.",
+            "• If the list shows “Loading music…”, wait a moment for tracks to appear from the player’s storage.<br/>"
+            "• While music is playing, the centre button shows a stop square; when paused it shows play.",
             S["body"],
         )
     )
+    story.append(Spacer(1, 3 * mm))
+    story.append(img("manual-now-playing.png", max_w=70 * mm, max_h=95 * mm))
+    story.append(Paragraph("Home screen — layout matches the player display (240×320)", S["caption"]))
     story.append(PageBreak())
 
     # 3 Settings map
@@ -451,8 +465,10 @@ def build():
     )
     story.append(Spacer(1, 3 * mm))
     story.append(menu_map_table(S))
-    story.append(Spacer(1, 4 * mm))
-    story.append(Paragraph("Use the back arrow at the top of any menu to return one step.", S["body"]))
+    story.append(Spacer(1, 3 * mm))
+    story.append(img("manual-settings.png", max_w=70 * mm, max_h=95 * mm))
+    story.append(Paragraph("Settings — same labels and button style as on the player", S["caption"]))
+    story.append(Paragraph("Use the back arrow (top right) on any menu to return one step.", S["body"]))
     story.append(PageBreak())
 
     # 4 WiFi
@@ -519,6 +535,9 @@ def build():
             S,
         )
     )
+    story.append(Spacer(1, 2 * mm))
+    story.append(img("manual-display.png", max_w=70 * mm, max_h=95 * mm))
+    story.append(Paragraph("Display Settings — Dark Mode, Timeout, Brightness", S["caption"]))
     story.append(callout("Changes apply immediately and are remembered the next time you use the player.", S))
     story.append(PageBreak())
 
@@ -526,6 +545,8 @@ def build():
     story.append(banner("6. Music library", S))
     story.append(Spacer(1, 4 * mm))
     story.append(Paragraph("Path: <b>Settings → Library</b>", S["body"]))
+    story.append(img("manual-library.png", max_w=70 * mm, max_h=80 * mm))
+    story.append(Paragraph("Library hub — On this player / Get music", S["caption"]))
     story.append(
         Paragraph(
             "The Library hub has two choices:",
