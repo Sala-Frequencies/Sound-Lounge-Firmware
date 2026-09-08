@@ -1,16 +1,16 @@
-# SALA Sound Lounge — firmware updates
+# SALA Sound Lounge â€” firmware updates
 
-Official firmware for the **[SALA Sound Lounge](https://www.salanewcastle.com.au/)** — vibro-acoustic sound therapy, handcrafted in Newcastle, NSW.
+Official firmware for the **[SALA Sound Lounge](https://www.salanewcastle.com.au/)** â€” vibro-acoustic sound therapy, handcrafted in Newcastle, NSW.
 
 You do not need a GitHub account to download files or to update a player that is already set up for online updates.
 
-**Current firmware version:** **1.1.0**
+**Current firmware version:** **1.1.0** (Lounge); Music Player **1.0.0**
 
 ---
 
 ## User guide (PDF)
 
-Full visual guide for the music player — home screen, Settings, Wi‑Fi, display, library, online updates, and SD card updates:
+Full visual guide for the music player â€” home screen, Settings, Wiâ€‘Fi, display, library, online updates, and SD card updates:
 
 **[Sala Frequencies Music Player User Guide (PDF)](docs/Sala_Frequencies_Music_Player_User_Guide.pdf)**
 
@@ -22,20 +22,20 @@ The **current** update package is always in the **root** of this repository on t
 
 | File | Purpose |
 |------|---------|
-| [`manifest.txt`](manifest.txt) | Package index — lists version and every `.bin` file |
+| [`manifest.txt`](manifest.txt) | Package index â€” lists version and every `.bin` file |
 | `music_player_ui_1.0.0.bin` | Music player touchscreen |
 | `music_player_sound_1.0.0.bin` | Music player sound module |
 | `sound_lounge_1.1.0.bin` | Sound Lounge zones module |
 
 Browse or download everything from the [main branch folder](https://github.com/Sala-Frequencies/Sound-Lounge-Firmware/tree/main).
 
-**Online updates** — the player checks this manifest automatically when Wi‑Fi is connected:
+**Online updates** â€” the player checks this manifest automatically when Wiâ€‘Fi is connected:
 
 `https://raw.githubusercontent.com/Sala-Frequencies/Sound-Lounge-Firmware/main/manifest.txt`
 
 Individual `.bin` files are downloaded from the same folder using the names listed in `manifest.txt`.
 
-**SD card updates** — copy `manifest.txt` and **all** listed `.bin` files into a folder named **`firmware`** on the player microSD card (see the PDF guide, or the steps below).
+**SD card updates** â€” copy `manifest.txt` and **all** listed `.bin` files into a folder named **`firmware`** on the player microSD card (see the PDF guide, or the steps below).
 
 Only the latest package is kept here. Older versions are not stored in this repository.
 
@@ -43,10 +43,10 @@ Only the latest package is kept here. Older versions are not stored in this repo
 
 ## Update over the air (recommended)
 
-Use this when the player can connect to your Wi‑Fi network.
+Use this when the player can connect to your Wiâ€‘Fi network.
 
 1. On the player screen, open **Settings**.
-2. Turn **Wi‑Fi** on and connect to your network.
+2. Turn **Wiâ€‘Fi** on and connect to your network.
 3. Open **Check for Updates** and wait until the version check finishes.
 4. If an update is available, choose **Upgrade Online**.
 5. Leave the player **powered on** until the update completes and the screen restarts.
@@ -57,7 +57,7 @@ The player downloads the update, installs it, and reboots automatically. This ca
 
 ## Update using an SD card
 
-Use this when Wi‑Fi is unavailable, or when you prefer to prepare the update on a computer first.
+Use this when Wiâ€‘Fi is unavailable, or when you prefer to prepare the update on a computer first.
 
 ### 1. Download the firmware package
 
@@ -83,7 +83,7 @@ Keep all downloaded files together in one folder on your computer.
 
 ### 3. Install from the SD card
 
-1. On the player screen, open **Settings → Check for Updates**.
+1. On the player screen, open **Settings â†’ Check for Updates**.
 2. Wait until the version check finishes.
 3. Choose **Upgrade Local**.
 4. Leave the player **powered on** until the update completes and the screen restarts.
@@ -101,9 +101,9 @@ Keep all downloaded files together in one folder on your computer.
 
 ## Problems?
 
-- **No update offered** — the player may already be on the latest version, or the SD package may be missing or incomplete.
-- **Online update fails** — check Wi‑Fi signal and password, then try again or use the SD card method.
-- **Update stuck** — leave power connected for at least ten minutes. If nothing changes, power-cycle once and check **Settings → Information** for the installed version before trying again.
+- **No update offered** â€” the player may already be on the latest version, or the SD package may be missing or incomplete.
+- **Online update fails** â€” check Wiâ€‘Fi signal and password, then try again or use the SD card method.
+- **Update stuck** â€” leave power connected for at least ten minutes. If nothing changes, power-cycle once and check **Settings â†’ Information** for the installed version before trying again.
 
 For more detail (menus, library, display, and screenshots), see the [User Guide PDF](docs/Sala_Frequencies_Music_Player_User_Guide.pdf).
 
@@ -111,6 +111,6 @@ For more detail (menus, library, display, and screenshots), see the [User Guide 
 
 ## About SALA
 
-Full body sound immersion. Low-frequency vibrations create a gentle massage for your body and nervous system — so you can feel and hear the music.
+Full body sound immersion. Low-frequency vibrations create a gentle massage for your body and nervous system â€” so you can feel and hear the music.
 
-[salanewcastle.com.au](https://www.salanewcastle.com.au/) · [info@sala.au](mailto:info@sala.au) · Newcastle, NSW, Australia
+[salanewcastle.com.au](https://www.salanewcastle.com.au/) Â· [info@sala.au](mailto:info@sala.au) Â· Newcastle, NSW, Australia
