@@ -4,7 +4,7 @@ Official firmware for the **[SALA Sound Lounge](https://www.salanewcastle.com.au
 
 You do not need a GitHub account to download files or to update a player that is already set up for online updates.
 
-**Current firmware version:** **1.0.0**
+**Current firmware version:** **1.1.0**
 
 ---
 
@@ -25,7 +25,7 @@ The **current** update package is always in the **root** of this repository on t
 | [`manifest.txt`](manifest.txt) | Package index — lists version and every `.bin` file |
 | `music_player_ui_1.0.0.bin` | Music player touchscreen |
 | `music_player_sound_1.0.0.bin` | Music player sound module |
-| `sound_lounge_1.0.0.bin` | Sound Lounge zones module |
+| `sound_lounge_1.1.0.bin` | Sound Lounge zones module |
 
 Browse or download everything from the [main branch folder](https://github.com/Sala-Frequencies/Sound-Lounge-Firmware/tree/main).
 
