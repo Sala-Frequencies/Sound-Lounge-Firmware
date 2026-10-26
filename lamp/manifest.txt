@@ -1,0 +1,6 @@
+# Lamp firmware. Separate from the music player package.
+version=0.1.9
+summary=Update available
+lamp=lamp_0.1.9.bin
+lamp_version=0.1.9
+lamp_size=1325264
