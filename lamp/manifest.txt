@@ -1,6 +1,6 @@
 # Lamp firmware. Separate from the music player package.
-version=0.1.11
-summary=Colour buses follow the program and go dark when idle
-lamp=lamp_0.1.11.bin
-lamp_version=0.1.11
-lamp_size=1391456
+version=0.1.12
+summary=Boots into the program list. Colour buses follow the program and go dark when idle
+lamp=lamp_0.1.12.bin
+lamp_version=0.1.12
+lamp_size=1382496
